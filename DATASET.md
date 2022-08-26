@@ -24,7 +24,7 @@
    python pickle2png.py --pickle_file train_output.pkl --save_path DATASET/densepose/train
    ```
 
-3. Compute [human foreground mask](https://github.com/Engineering-Course/CIHP_PGN). Save results in `silhouette` directory.
+3. Compute [human foreground mask](https://github.com/Engineering-Course/CIHP_PGN). Save results in `silhouette` directory. Or you can download our computed silhouettes for the [training set](https://filebox.ece.vt.edu/~Badour/pose-with-style/data/train_sil.zip) and [testing set](https://filebox.ece.vt.edu/~Badour/pose-with-style/data/test_sil.zip).
 
 4. Compute UV space coordinates:
    1. Compute UV space partial coordinates in the resolution 512x512.
