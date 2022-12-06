@@ -45,7 +45,7 @@ We provide sample data in `data` directory. The output will be saved in `data/ou
 python garment_transfer.py --input_path ./data --CCM_pretrained_model path/to/CCM_epoch50.pt --pretrained_model path/to/posewithstyle.pt --part upper_body
 ```
 
-To use your own images you need to put the input image (input_name+'.png'), dense pose (input_name+'_iuv.png'), and silhouette (input_name+'_sil.png'), as well as the garment source target image (target_name+'.png'), dense pose (target_name+'_iuv.png'), and silhouette (target_name+'_sil.png') in `data` directory. You can specify the part to be transferred using `--part` as `upper_body`, `lower_body`, or `face`. The output as well as the part transferred (shown in red) will be saved in `data/output` directory.
+To use your own images you need to put the input image (input_name+'.png'), dense pose (input_name+'_iuv.png'), and silhouette (input_name+'_sil.png'), as well as the garment source target image (target_name+'.png'), dense pose (target_name+'_iuv.png'), and silhouette (target_name+'_sil.png') in `data` directory. You can specify the part to be transferred using `--part` as `upper_body`, `lower_body`, `full_body` or `face`. The output as well as the part transferred (shown in red) will be saved in `data/output` directory.
 ```
 python garment_transfer.py --input_path ./data --input_name fashionWOMENSkirtsid0000177102_1front --target_name fashionWOMENBlouses_Shirtsid0000635004_1front --CCM_pretrained_model path/to/CCM_epoch50.pt --pretrained_model path/to/posewithstyle.pt --part upper_body
 ```
