@@ -10,10 +10,10 @@ Official Pytorch implementation for **Pose with Style: Detail-Preserving Pose-Gu
 
 ## Requirements
 ```
-conda create -n posewithstyle python=3.6
-conda activate posewithstyle
-conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=10.2 -c pytorch
-pip install -r requirements.txt
+conda create -n pws python=3.8
+conda activate pws
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+pip install -r requirements
 ```
 Intall openCV using `conda install -c conda-forge opencv` or `pip install opencv-python`.
 If you would like to use [wandb](https://wandb.ai/site), install it using `pip install wandb`.

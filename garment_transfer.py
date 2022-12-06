@@ -168,7 +168,7 @@ if __name__ == "__main__":
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
-    g_ema = Generator(args.size, args.latent, args.n_mlp, channel_multiplier=args.channel_multiplier, garment_transfer=True).to(device)
+    g_ema = Generator(args.size, args.latent, args.n_mlp, channel_multiplier=args.channel_multiplier, garment_transfer=True, part=args.part).to(device)
     checkpoint = torch.load(args.pretrained_model)
     g_ema.load_state_dict(checkpoint["g_ema"])
 
