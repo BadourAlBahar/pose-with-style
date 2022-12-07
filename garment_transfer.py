@@ -151,7 +151,7 @@ if __name__ == "__main__":
     parser.add_argument("--input_path", type=str, help="path to the input dataset")
     parser.add_argument("--input_name", type=str, default="fashionWOMENSkirtsid0000177102_1front", help="input file name")
     parser.add_argument("--target_name", type=str, default="fashionWOMENBlouses_Shirtsid0000635004_1front", help="target file name")
-    parser.add_argument("--part", type=str, default="upper_body", help="body part to transfer upper_body, lower_body, and face")
+    parser.add_argument("--part", type=str, default="upper_body", help="body part to transfer upper_body, lower_body, full_body, and face")
     parser.add_argument("--size", type=int, default=512, help="output image size of the generator")
     parser.add_argument("--truncation", type=float, default=1, help="truncation ratio")
     parser.add_argument("--truncation_mean", type=int, default=4096, help="number of vectors to calculate mean for the truncation")
@@ -168,7 +168,7 @@ if __name__ == "__main__":
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
 
-    g_ema = Generator(args.size, args.latent, args.n_mlp, channel_multiplier=args.channel_multiplier, garment_transfer=True).to(device)
+    g_ema = Generator(args.size, args.latent, args.n_mlp, channel_multiplier=args.channel_multiplier, garment_transfer=True, part=args.part).to(device)
     checkpoint = torch.load(args.pretrained_model)
     g_ema.load_state_dict(checkpoint["g_ema"])
 

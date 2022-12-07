@@ -1,3 +1,4 @@
 tqdm
 pandas
 scipy
+opencv-python
