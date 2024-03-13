@@ -19,12 +19,12 @@ Intall openCV using `conda install -c conda-forge opencv` or `pip install opencv
 If you would like to use [wandb](https://wandb.ai/site), install it using `pip install wandb`.
 
 ## Download pretrained models
-You can download the pretrained model [here](https://filebox.ece.vt.edu/~Badour/pose-with-style/pretrained/posewithstyle.pt), and the pretrained coordinate completion model [here](https://filebox.ece.vt.edu/~Badour/pose-with-style/downloads/CCM_epoch50.pt).
+You can download the pretrained model [here](https://drive.google.com/file/d/1IcIJMTHA-_-_qcjRIrnSUnQf4n8GmtPd/view?usp=sharing), and the pretrained coordinate completion model [here](https://drive.google.com/file/d/1Tck_NzJ4ifT76csEShOtlRK7HpfjFhHP/view?usp=sharing).
 
-Note: we also provide the pretrained model trained on [StylePoseGAN](https://people.mpi-inf.mpg.de/~ksarkar/styleposegan/) [Sarkar et al. 2021] DeepFashion train/test split [here](https://filebox.ece.vt.edu/~Badour/pose-with-style/pretrained/posewithstyle_sarkarsplit.pt). We also provide this split's pretrained coordinate completion model [here](https://filebox.ece.vt.edu/~Badour/pose-with-style/downloads/sarkar_CCM_epoch50.pt).
+Note: we also provide the pretrained model trained on [StylePoseGAN](https://people.mpi-inf.mpg.de/~ksarkar/styleposegan/) [Sarkar et al. 2021] DeepFashion train/test split [here](https://drive.google.com/file/d/1DpOQ1Z7JEls3kCYaHMg1CpgjxbTJB6hg/view?usp=sharing). We also provide this split's pretrained coordinate completion model [here](https://drive.google.com/file/d/1oz-g0T5HLW-hVgeqYC55eI10DA-59Yp3/view?usp=sharing).
 
 ## Reposing
-Download the [UV space - 2D look up map](https://filebox.ece.vt.edu/~Badour/pose-with-style/downloads/dp_uv_lookup_256.npy) and save it in `util` folder.
+Download the [UV space - 2D look up map](https://drive.google.com/file/d/1JLQ5bGl7YU-BwmdSc-DySy5Ya6FQIJBy/view?usp=sharing) and save it in `util` folder.
 
 We provide sample data in `data` directory. The output will be saved in `data/output` directory.
 ```
@@ -37,7 +37,7 @@ python inference.py --input_path ./data --input_name fashionWOMENDressesid000026
 ```
 
 ## Garment transfer
-Download the [UV space - 2D look up map](https://filebox.ece.vt.edu/~Badour/pose-with-style/downloads/dp_uv_lookup_256.npy) and the [UV space body part segmentation](https://filebox.ece.vt.edu/~Badour/pose-with-style/downloads/uv_space_parts.npy). Save both in `util` folder.
+Download the [UV space - 2D look up map](https://drive.google.com/file/d/1JLQ5bGl7YU-BwmdSc-DySy5Ya6FQIJBy/view?usp=sharing) and the [UV space body part segmentation](https://drive.google.com/file/d/179zoQVVrEgFbkEmHwLHU1AAqPktH-guU/view?usp=sharing). Save both in `util` folder.
 The UV space body part segmentation will provide a generic segmentation of the human body. Alternatively, you can specify your own mask of the region you want to transfer.
 
 We provide sample data in `data` directory. The output will be saved in `data/output` directory.
